@@ -70,6 +70,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="headlineLabel" destination="mqY-ly-bcp" id="sVZ-Ga-zDM"/>
+                                            <outlet property="previewLabel" destination="OOW-Tz-BoM" id="wyB-6m-kvT"/>
+                                            <outlet property="thumbImageView" destination="Axb-je-Cja" id="ziG-Gz-PU3"/>
                                             <segue destination="zvC-IJ-0Gk" kind="show" id="Pjm-p1-bC4"/>
                                         </connections>
                                     </tableViewCell>
