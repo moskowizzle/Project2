@@ -12,6 +12,7 @@
 		BA0F61981DF61FF3008A0A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0F61961DF61FF3008A0A62 /* Main.storyboard */; };
 		BA0F619A1DF61FF3008A0A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F61991DF61FF3008A0A62 /* Assets.xcassets */; };
 		BA0F619D1DF61FF3008A0A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0F619B1DF61FF3008A0A62 /* LaunchScreen.storyboard */; };
+		BA0F61A81DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA0F61A71DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BA0F61991DF61FF3008A0A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0F619C1DF61FF3008A0A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0F619E1DF61FF3008A0A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0F61A71DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = B18161_MoskMobile_KD_Mockup_1.jpg; path = ../../../../../Logos/B18161_MoskMobile_KD_Mockup_1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		BA0F61911DF61FF3008A0A62 /* Project 2 */ = {
 			isa = PBXGroup;
 			children = (
-				BA0F61921DF61FF3008A0A62 /* AppDelegate.swift */,
-				BA0F61941DF61FF3008A0A62 /* ViewController.swift */,
-				BA0F61961DF61FF3008A0A62 /* Main.storyboard */,
+				BA0F61A61DF6511B008A0A62 /* Data */,
+				BA0F61A51DF65111008A0A62 /* Logic */,
+				BA0F61A41DF6510C008A0A62 /* UI */,
 				BA0F61991DF61FF3008A0A62 /* Assets.xcassets */,
-				BA0F619B1DF61FF3008A0A62 /* LaunchScreen.storyboard */,
+				BA0F61A71DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg */,
 				BA0F619E1DF61FF3008A0A62 /* Info.plist */,
 			);
 			path = "Project 2";
+			sourceTree = "<group>";
+		};
+		BA0F61A41DF6510C008A0A62 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BA0F61961DF61FF3008A0A62 /* Main.storyboard */,
+				BA0F619B1DF61FF3008A0A62 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BA0F61A51DF65111008A0A62 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				BA0F61921DF61FF3008A0A62 /* AppDelegate.swift */,
+				BA0F61941DF61FF3008A0A62 /* ViewController.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		BA0F61A61DF6511B008A0A62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0F61A81DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg in Resources */,
 				BA0F619D1DF61FF3008A0A62 /* LaunchScreen.storyboard in Resources */,
 				BA0F619A1DF61FF3008A0A62 /* Assets.xcassets in Resources */,
 				BA0F61981DF61FF3008A0A62 /* Main.storyboard in Resources */,
