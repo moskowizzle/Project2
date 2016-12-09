@@ -14,6 +14,7 @@
 		BA0F619D1DF61FF3008A0A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0F619B1DF61FF3008A0A62 /* LaunchScreen.storyboard */; };
 		BA0F61A81DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA0F61A71DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg */; };
 		BA0F61AA1DF6563B008A0A62 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F61A91DF6563B008A0A62 /* MainTableViewCell.swift */; };
+		BA3D23451DFB583800D82922 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D23441DFB583800D82922 /* SafariViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA0F619E1DF61FF3008A0A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0F61A71DF6527F008A0A62 /* B18161_MoskMobile_KD_Mockup_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = B18161_MoskMobile_KD_Mockup_1.jpg; path = ../../../../../Logos/B18161_MoskMobile_KD_Mockup_1.jpg; sourceTree = "<group>"; };
 		BA0F61A91DF6563B008A0A62 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		BA3D23441DFB583800D82922 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				BA0F61921DF61FF3008A0A62 /* AppDelegate.swift */,
 				BA0F61941DF61FF3008A0A62 /* ViewController.swift */,
 				BA0F61A91DF6563B008A0A62 /* MainTableViewCell.swift */,
+				BA3D23441DFB583800D82922 /* SafariViewController.swift */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				BA0F61951DF61FF3008A0A62 /* ViewController.swift in Sources */,
 				BA0F61AA1DF6563B008A0A62 /* MainTableViewCell.swift in Sources */,
+				BA3D23451DFB583800D82922 /* SafariViewController.swift in Sources */,
 				BA0F61931DF61FF3008A0A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +336,7 @@
 				BA0F61A31DF61FF3008A0A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
