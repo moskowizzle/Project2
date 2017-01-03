@@ -10,19 +10,22 @@ import UIKit
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var sampleTextView: UITextView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        fetchData() { result in
+            let data = result
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! MainTableViewCell
         
         return cell
     }
     
-    private func fetchData(closure: @escaping (String) -> ()) {
+    func fetchData(closure: @escaping (String) -> ()) {
         
         let endpoint = "https://newsapi.org/v1/articles?source=fox-sports&sortBy=top&apiKey=e485a31dbe5b43f19ae899ba6029d1f8"
         let url = URLRequest(url: URL(string: endpoint)!)
@@ -40,8 +43,40 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         task.resume()
     }
+    
+    class Article {
+        var title: String
+        var description: String
+        var urlToImage: URL
+        var url: URL
+        
+        init(title: String, description: String, urlToImage: URL, url: URL) {
+            self.title = title
+            self.description = description
+            self.urlToImage = urlToImage
+            self.url = url
+        }
+   
+        convenience init(data: [String: Any]) {
+            let title = data["title"]! as? String
+            let description = data["description"]! as? String
+            let urlToImage = data["urlToImage"]! as? URL
+            let url = data["url"] as? URL
+            
+            self.init(title: title!, description: description!, urlToImage: urlToImage!, url: url!)
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fetchData() { result in
+            let data = result
+        }
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
