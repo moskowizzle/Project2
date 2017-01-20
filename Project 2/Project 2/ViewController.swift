@@ -8,8 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! MainTableViewCell
+        
+        return cell
+    }
+    
+    private func fetchData(closure: @escaping (String) -> ()) {
+        
+        let endpoint = "https://newsapi.org/v1/articles?source=fox-sports&sortBy=top&apiKey=e485a31dbe5b43f19ae899ba6029d1f8"
+        let url = URLRequest(url: URL(string: endpoint)!)
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: url) { (data, response, error) in
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                return
+            }
+            DispatchQueue.main.async {
+                closure(String(data: responseData, encoding: String.Encoding.utf8)!)
+            }
+            
+            
+        }
+        task.resume()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
